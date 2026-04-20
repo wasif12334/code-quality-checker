@@ -83,7 +83,7 @@ After analysis, the system calculates a quality score from 0 to 100. A higher sc
 For every issue found, the system generates a warning message that tells the user what is wrong and how to fix it. Example warnings include:
 •	"Avoid using System.out.println in production code"
 •	"Use meaningful variable names instead of single letters"
-•	"High complexity detected — consider breaking this into smaller methods"
+•	"High complexity detected consider breaking this into smaller methods"
 
 4. Functional Requirements
 
@@ -118,19 +118,19 @@ Result Model (Score + Warnings)
 
 7. Future Enhancements
 The following features are not in scope for the current version but could be added in the future:
-•	File upload support — allow users to upload .java files directly instead of pasting code
-•	Multiple language support — extend analysis beyond Java to other languages like Python or C++
-•	AI-based analysis — use a language model to provide smarter, context-aware suggestions
-•	UI dashboard — show score history, trends, and comparisons over time
-•	PDF report generation — let users download a formatted analysis report
+•	File upload support allow users to upload .java files directly instead of pasting code
+•	Multiple language support extend analysis beyond Java to other languages like Python or C++
+•	AI-based analysis use a language model to provide smarter, context-aware suggestions
+•	UI dashboard show score history, trends, and comparisons over time
+•	PDF report generation let users download a formatted analysis report
 
 8. Team Members
 
-Role	Member
-Backend Developer	Your Name
-Frontend Developer	Member 1
-Rules Developer	Member 2
-Documentation & Testing	Member 3
+Wasif Ali Raza
+Muhammad Madni
+Duad Latif
+Khizer Rehman Nawaz
+Zohaib Luqman
 
 9. Conclusion
 The Code Quality Checker is a lightweight but practical tool that helps developers write better code. By combining a rule-based analysis engine with a simple REST API and a clean frontend, the system makes it easy for anyone to get immediate feedback on their code quality.
