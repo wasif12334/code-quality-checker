@@ -3,6 +3,37 @@
 
 This is project demonstrating **Code Smells** and their refactoring solutions in **Java Spring Boot**.
 
+This repository also now includes the **Code Quality Dashboard** backend and frontend for static code analysis, metrics, smell detection, visualization, and analysis history.
+
+## 🧩 Dashboard Project Layout
+
+- `src/main/java/com/codesmells/analysis` - Spring Boot backend for analysis, persistence, and REST APIs
+- `frontend/` - React + Vite dashboard UI with charts and history views
+- `src/main/resources/application.properties` - backend database and CORS configuration
+
+## ▶️ How to Run
+
+### Backend
+
+1. Start MySQL and create a database named `code_quality_dashboard`.
+2. Set `DB_USERNAME` and `DB_PASSWORD` if your local MySQL credentials are different from `root` / `root`.
+3. From the project root, run `mvn spring-boot:run`.
+4. The API will be available at `http://localhost:8080`.
+
+### Frontend
+
+1. Open the `frontend` folder.
+2. Install dependencies with `npm install`.
+3. Start the UI with `npm run dev`.
+4. Open `http://localhost:5173` in your browser.
+
+### End-to-End Flow
+
+1. Start the backend first.
+2. Start the frontend.
+3. Paste Java, Python, or C++ code into the editor or upload a source file.
+4. Click **Analyze Code** to generate charts, smells, suggestions, and history records.
+
 This repository is designed for to understand code quality issues and learn how to write better, more maintainable code.
 
 ## 🎯 Learning Objectives
