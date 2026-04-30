@@ -3,7 +3,7 @@ Software Requirements Specification
 Code Quality Checker
 
 Software Construction & Development Course
-Version 1.0
+
 
 1. Introduction
 1.1 Purpose
