@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Code Quality Checker</title>
+    <meta name="description" content="Analyze your code quality using AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 20L14 4M18 8L22 12L18 16M6 16L2 12L6 8" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <defs>
+                        <linearGradient id="paint0_linear" x1="2" y1="12" x2="22" y2="12" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#38BDF8"/>
+                            <stop offset="1" stop-color="#818CF8"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <h1>Code Quality Checker</h1>
+            </div>
+            <p class="subtitle">AI-powered insights for your codebase</p>
+        </header>
+
+        <div class="workspace">
+            <div class="panel editor-panel">
+                <div class="panel-header">
+                    <h2>Source Code</h2>
+                    <div class="window-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="panel-content">
+                    <textarea id="code" placeholder="Paste your Java code here..." spellcheck="false"></textarea>
+                </div>
+                <div class="panel-footer">
+                    <button id="analyzeBtn" onclick="analyzeCode()">
+                        <span>Analyze Code</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel result-panel">
+                <div class="panel-header">
+                    <h2>Analysis Result</h2>
+                </div>
+                <div class="panel-content result-content">
+                    <div id="loading" class="hidden">
+                        <div class="spinner"></div>
+                        <p>Analyzing code structure and quality...</p>
+                    </div>
+                    <div id="result" class="empty-state">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="rgba(255,255,255,0.1)">
+                            <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>Awaiting code submission.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
