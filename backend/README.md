@@ -1,0 +1,55 @@
+﻿# 🧠 Code Quality Checker
+
+![Java](https://img.shields.io/badge/Backend-Java-blue?style=for-the-badge)
+![Spring Boot](https://img.shields.io/badge/Framework-Spring%20Boot-green?style=for-the-badge)
+![Frontend](https://img.shields.io/badge/Frontend-HTML%2FCSS%2FJS-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Educational-lightgrey?style=for-the-badge)
+
+---
+
+## 📌 Overview
+The **Code Quality Checker** is a software engineering course project designed to analyze source code and provide feedback on its quality.
+
+It evaluates code based on:
+- Basic coding standards  
+- Common bad practices  
+- Simple complexity checks  
+- Improvement suggestions  
+
+This project demonstrates **REST API development using Spring Boot** and a **rule-based analysis system**.
+
+---
+
+## ⚙️ Tech Stack
+
+| Layer      | Technology |
+|------------|------------|
+| Backend    | Java, Spring Boot |
+| API        | REST API |
+| Frontend   | HTML, CSS, JavaScript |
+| Tools      | Maven, GitHub |
+
+---
+
+## 🚀 Features
+
+- 📥 Accepts raw code input via API  
+- 🧠 Rule-based code analysis engine  
+- ⚠ Detects bad practices like:
+  - Debug print statements
+  - Poor variable naming (basic detection)
+  - High complexity patterns  
+- 📊 Returns:
+  - Code quality score (0–100)
+  - List of warnings & suggestions  
+
+---
+
+## 📡 API Reference
+
+### 🔍 Check Code Quality
+
+**Endpoint:**
+```http
+POST /api/check
