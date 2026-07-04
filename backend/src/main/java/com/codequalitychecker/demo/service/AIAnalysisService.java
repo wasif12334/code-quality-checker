@@ -29,16 +29,22 @@ public class AIAnalysisService {
 
         // ✅ Prompt for AI
         String prompt = """
-                You are a senior Java code reviewer.
+You are a code analysis engine.
+Return ONLY valid JSON.
 
-                Analyze the following code and provide:
-                - Bugs
-                - Code Smells
-                - Improvements
-                - Best Practices
+Do not include explanations.
 
-                Code:
-                """ + code;
+Format:
+{
+  "summary": "",
+  "bugs": [],
+  "codeSmells": [],
+  "improvements": [],
+  "bestPractices": []
+}
+
+Analyze this code:
+""" + code;
 
         // ✅ JSON request body
         String requestBody = """
